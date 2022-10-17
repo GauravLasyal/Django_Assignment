@@ -1,0 +1,14 @@
+<form action="ssearch" method="post">
+	{% csrf_token %}
+	Enter string to search: <input type="text" name="textquery">
+	<label for="sortquery">Sort By </label>
+	<select name="sortquery" id="sortquery">
+	<option value="rank">Rank</option>
+    	<option value="rating">Rating</option>
+    	<option value="name">Name</option>
+  	</select>
+	<input type="submit" value="Search">
+</form>
+
+
+
